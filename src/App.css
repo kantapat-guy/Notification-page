@@ -1,0 +1,151 @@
+* {
+  max-width: 1440px;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+.App {
+  margin-top: 5%;
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  width: 520px;
+  height: fit-content;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.App h2 {
+  margin: 0%;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.noti-container {
+  display: flex;
+  align-items: center;
+  margin: 0rem;
+}
+
+.noti-num {
+  font-size: 1rem;
+  color: white;
+  background-color: hsl(219, 85%, 26%);
+  width: fit-content;
+  padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+  border-radius: 5px;
+  margin-left: 0.75rem;
+}
+
+.all-read {
+  margin: 0rem;
+  cursor: pointer;
+  border: transparent;
+  background-color: transparent;
+  color: hsl(219, 85%, 26%);
+  font-weight: 500;
+}
+
+.notread {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6fafd;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 0.4rem;
+}
+.read {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-bottom: 0.4rem;
+}
+img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0%;
+  cursor: pointer;
+}
+
+.message {
+  margin-top: .5rem;
+  margin-left: 2.75rem;
+  border: 1px solid hsla(218, 14%, 63%, 0.437);
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: left;
+  font-size: 0.75rem;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+}
+.message:hover {
+  border: 1px solid hsla(218, 14%, 63%, 0);
+  background-color: hsl(210, 62%, 94%);
+}
+
+.sub-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0%;
+  margin-left: 0.75rem;
+}
+
+.act-pic {
+  margin-left: auto;
+}
+
+.name-text {
+  font-weight: 800;
+  font-size: 0.75rem;
+  color: black;
+}
+.detail-text {
+  font-size: 0.75rem;
+  color: hsl(219, 12%, 42%);
+  text-align: left;
+  margin-bottom: 0.25rem;
+}
+.detail-text > span {
+  font-weight: 800;
+  cursor: pointer;
+}
+.detail-text > span:hover {
+  color: hsl(219, 85%, 26%);
+}
+.dot {
+  color: red;
+}
+.nodot {
+  display: none;
+}
+
+
+.time-text {
+  color: hsl(219, 14%, 63%);
+  font-size: 0.5rem;
+  margin: 0%;
+}
+
+.indetail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
+  .App {
+    width: 300px;
+  }
+}
